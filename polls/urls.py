@@ -6,5 +6,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^add/$', views.InsertView.as_view(), name='mapimage-add'),
+    url(r'^detail/(?P<pk>[-\w]+)/$', views.MapDetail.as_view(), name='map-image-detail')
 ]
     
